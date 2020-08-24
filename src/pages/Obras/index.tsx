@@ -150,7 +150,7 @@ const Obras: React.FC = () => {
 					<Row>
 						<Col span={24} style={{ textAlign: "center" }}>
 							<Title level={3}>
-								Informe abaixo os dados do autor
+								Informe abaixo os dados da obra
 							</Title>
 						</Col>
 					</Row>
