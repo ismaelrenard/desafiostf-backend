@@ -79,7 +79,7 @@ const Obras: React.FC = () => {
 			dataPublicacao,
 		} = values;
 		try {
-			const obra = await api.post(
+			await api.post(
 				"/obras",
 				{
 					nome,
