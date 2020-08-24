@@ -110,7 +110,7 @@ const Obras: React.FC = () => {
 				message.error(error.response?.data.message);
 			} else {
 				const errors = error.response.data;
-				errors.map((err: any) => {
+				errors.forEach((err: any) => {
 					message.error(err.error);
 				});
 			}
