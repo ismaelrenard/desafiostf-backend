@@ -1,0 +1,32 @@
+@import "~antd/dist/antd.css";
+
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "nunito", sans-serif;
+	font-size: "nunito", sans-serif;
+	font-weight: 16px;
+}
+
+.container {
+	max-width: 1140px;
+	margin: auto;
+	padding: 0 12px;
+}
+
+.hide {
+	display: none;
+}
+
+.show {
+	display: flex;
+}
+
+header {
+	height: 120px;
+}
