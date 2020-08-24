@@ -64,7 +64,7 @@ const Autores: React.FC = () => {
 
 	const handleDelete = async (idAutor: number) => {
 		try {
-			const autor = await api.delete("/autores/" + idAutor, {
+			await api.delete("/autores/" + idAutor, {
 				auth: {
 					username: "ismael",
 					password: "renard",
@@ -83,7 +83,7 @@ const Autores: React.FC = () => {
 		const { nome, sexo, email, dataNascimento, paisOrigem, cpf } = values;
 
 		try {
-			const autor = await api.post(
+			await api.post(
 				"/autores",
 				{
 					nome,

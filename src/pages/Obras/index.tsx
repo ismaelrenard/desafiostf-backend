@@ -51,12 +51,11 @@ const Obras: React.FC = () => {
 		return current && current > moment();
 	}
 
-	const [showCpf, showCpfResults] = useState(false);
 	const [obras, obrasSet] = useState<Obra[]>([]);
 
 	const handleDelete = async (id: number) => {
 		try {
-			const autor = await api.delete("/obras/" + id, {
+			await api.delete("/obras/" + id, {
 				auth: {
 					username: "ismael",
 					password: "renard",
